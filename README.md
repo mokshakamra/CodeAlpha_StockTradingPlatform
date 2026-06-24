@@ -1,102 +1,134 @@
 # Stock Trading Platform
 
-## Overview
-
-The Stock Trading Platform is a console-based Java application that simulates a basic stock market environment. Users can view available stocks, buy and sell shares, manage their portfolio, track transactions, and analyze portfolio performance.
-
-This project demonstrates Object-Oriented Programming (OOP), Collections Framework, transaction management, and portfolio tracking concepts in Java.
+A Java-based Stock Trading Platform that simulates a basic stock market environment where users can buy and sell stocks, manage their portfolio, track transactions, and monitor portfolio performance. The project is built using Object-Oriented Programming (OOP) principles and includes File I/O for persistent portfolio storage.
 
 ## Features
 
-### Market Management
-
-* View available stocks
-* Display stock symbol, company name, and current price
-
-### Trading Operations
-
-* Buy stocks
-* Sell stocks
+* View available market stocks and prices
+* Buy stocks using wallet balance
+* Sell owned stocks
+* Track portfolio holdings
+* Calculate portfolio value
+* Monitor profit/loss performance
+* View transaction history
 * Wallet balance management
-* Validation for insufficient funds and stock availability
-
-### Portfolio Management
-
-* View owned stocks
-* Track stock quantities
-* Calculate portfolio value
-
-### Transaction Tracking
-
-* Record buy transactions
-* Record sell transactions
-* View complete transaction history
-
-### Performance Analysis
-
-* Calculate portfolio value
-* Track profit and loss
-* Monitor investment performance
+* File I/O support for portfolio persistence
+* Exception handling for invalid inputs
 
 ## Technologies Used
 
 * Java
 * Object-Oriented Programming (OOP)
 * Collections Framework (ArrayList)
-* IntelliJ IDEA
+* File Handling (BufferedReader & BufferedWriter)
+* Exception Handling
 
 ## Project Structure
 
-
-src
+```text
+StockTradingPlatform
 │
-├── model
-│   ├── Stock.java
-│   ├── PortfolioItem.java
-│   └── Transaction.java
+├── src
+│   ├── model
+│   │   ├── Stock.java
+│   │   ├── PortfolioItem.java
+│   │   └── Transaction.java
+│   │
+│   ├── service
+│   │   └── TradingService.java
+│   │
+│   └── Main.java
 │
-├── service
-│   └── TradingService.java
-│
-└── Main.java
+├── portfolio.txt
+└── README.md
+```
 
+## Functionalities
 
-## Application Menu
+### Market Data
 
-===== STOCK TRADING PLATFORM =====
+Displays available stocks with their symbols, company names, and prices.
 
-1. View Market
-2. Buy Stock
-3. Sell Stock
-4. View Portfolio
-5. Transaction History
-6. Portfolio Performance
-7. Wallet Balance
-8. Exit
+### Buy Stocks
 
+Users can purchase stocks if sufficient wallet balance is available.
 
-## Learning Outcomes
+### Sell Stocks
 
-Through this project, I gained hands-on experience with:
+Users can sell owned stocks and receive funds back into their wallet.
 
-* Object-Oriented Programming
-* Class Design and Encapsulation
-* Collections Framework
-* Business Logic Implementation
-* Portfolio Management Concepts
-* Transaction Processing
-* Console-Based Application Development
+### Portfolio Tracking
+
+Displays owned stocks, quantities, and current portfolio value.
+
+### Portfolio Performance
+
+Calculates:
+
+* Invested Amount
+* Current Portfolio Value
+* Profit/Loss
+
+### Transaction History
+
+Maintains a record of buy and sell operations during execution.
+
+### Persistent Storage
+
+Portfolio and wallet balance are automatically saved to `portfolio.txt` and loaded when the application starts.
+
+## How to Run
+
+### Clone Repository
+
+```bash
+git clone https://github.com/mokshakamra/CodeAlpha_StockTradingPlatform.git
+```
+
+### Open Project
+
+Open the project in IntelliJ IDEA or any Java IDE.
+
+### Configure JDK
+
+Use JDK 17 or above.
+
+### Run Application
+
+Run:
+
+```text
+Main.java
+```
+
+## Sample Stocks
+
+| Symbol | Company   | Price |
+| ------ | --------- | ----- |
+| AAPL   | Apple     | ₹190  |
+| GOOGL  | Google    | ₹250  |
+| TSLA   | Tesla     | ₹300  |
+| MSFT   | Microsoft | ₹220  |
+
+## OOP Concepts Used
+
+* Encapsulation
+* Classes and Objects
+* Constructors
+* Method Abstraction
+* Composition
 
 ## Future Enhancements
 
-* File Handling for data persistence
-* Database integration using MySQL
-* User Authentication System
-* Dynamic stock price simulation
-* Graphical User Interface (GUI)
-* Real-time market data integration
+* Real-time stock price simulation
+* User authentication
+* Database integration
+* GUI using JavaFX or Swing
+* Persistent transaction history
 
 ## Author
 
 Moksha Kamra
-B.Tech Undergraduate | Java Developer | Exploring AI/ML, Data Analytics & Software Development
+
+CodeAlpha Java Programming Internship Project
+
