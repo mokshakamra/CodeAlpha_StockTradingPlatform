@@ -284,8 +284,8 @@ public class TradingService {
                 );
 
                 writer.newLine();
-                System.out.println("Portfolio saved to: " + new File(FILE_NAME).getAbsolutePath());
             }
+            System.out.println("Portfolio saved to: " + new File(FILE_NAME).getAbsolutePath());
 
         } catch (IOException e) {
 
